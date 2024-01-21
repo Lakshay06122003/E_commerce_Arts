@@ -1,0 +1,293 @@
+* {                                                     /* universal selector*/
+    background-color: #fffdde;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.name {                                                /*formats my name on the top of every page*/
+    font-size: 100px;
+    padding: 50px;
+    margin: 20px;
+    border: 10px;
+    color: white;
+    background-color: #8f893c;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: wavy;
+    background-image: url(.dist/oceanimage.jpg);
+}
+
+.nav {                                                  /*formats the navigation bar*/
+    font-size: 12px;
+    text-align: center;
+    font-size: 20px;
+    word-spacing: 4em;
+    font-style: italic;
+}
+
+nav  a {                                                /*formats the navigation bar*/
+    color: darkred;
+    text-decoration: none;
+    text-shadow: 0 0 20px rgba(255, 0, 0,50);
+}
+a:hover {                                               /*changes color when hover over links*/
+    color: coral;
+}
+
+
+
+center  em {                                            /*em tags inside center tag are selected*/
+    color: aliceblue;
+    background-color: black;
+}
+
+img {                                                   /*formats all the images*/
+    padding: 2px;
+    border: 1px solid brown;
+    margin: 5px 10px;
+    box-shadow: 0 0 200px rgba(25, 2, 255,50) ;
+}
+.hermione {                                             /*formats my fav artwork image*/
+    box-shadow: 0 0 200px rgba(0, 0, 0,50) ;
+}
+.myimage {                                              /*formats myimage*/
+    box-shadow: 0 0 200px rgba(135, 206, 235,50) ;
+
+}
+a {                                                     /*formats all the anchor tags*/
+    color: darkred;
+}
+
+ol {                                                    /*formats the ordered lists*/
+    font-style: italic;
+    color: brown;
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+.contactlist {                                          /*formats lists on contact page*/
+    color:forestgreen;
+}
+
+.contactlist  ul {                                      /*formats unorderedlists on contact page*/
+    color: blue;
+    text-decoration: underline;
+}
+
+.flexcontainer {                                        /*formats the whole contact page by adding flexbox*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid darkred;
+    background-color: darkred;
+}
+
+.contactlist, .contact{                                 /*format contact lists and contact both*/
+    gap: 1em;
+    border: 3px dotted brown;
+    
+}
+form {                                                  /*formats the form*/
+    width: 100%;
+    padding:12px;    
+}
+
+table {                                                 /*formats the table*/
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkred;
+    border-collapse: collapse ;
+    margin: 25px 0;
+    font-size: 2em;
+    min-width: 400px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 20px rgba(0, 0, 0,1);
+
+}
+
+table tr th{                                             /*formats th tags inside tr tags inside the table*/
+    background-color: #009879;
+    text-align: left;
+    padding: 12px 15px;
+    color: white;
+    border-bottom:1px solid black;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.15);
+
+
+}
+
+table td {                                                /*formats td tags inside the table*/
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 0.9em;
+
+}
+
+
+
+.grid {                                                 /*formats the shop original shop prints links under home page*/
+    display: grid;
+    gap: 1em;
+    background-color: darkred;
+    font-style: italic;
+    border: 1px dotted darkred;
+    box-shadow: 0 0 20px rgba(0, 0, 0,5);
+}
+
+.grid  a {                                              /*formats the shop original shop prints links under home page*/
+
+    border: 1px dotted darkred;
+    box-shadow: 0 0 20px rgba(255, 0, 0,50);
+    background-color: darkred;
+    color: #fffdde;
+    font-family: cursive;
+}
+
+.grid h1 {                                              /*formats the shop original shop prints links under home page*/
+    border: 1px dotted darkred;
+    box-shadow: 0 0 20px rgba(0, 0, 0,5);
+    background-color: #fffdde;
+    color: #fffdde;
+}
+
+
+
+h1 ~ p {                                                /*matches p element sharing same parent as h1 tag*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: darkblue;
+}
+
+h1 + h1 {                                               /*matches h1 elements just after h1 element under same parent*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #8f893c;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+p::selection {                                          /*matches what the user is selecting*/
+    background : white
+}
+a[target="_blank"]:hover{                               /*matches anchor tags whose target is blank */
+    border-radius: 10em;
+    border-color: aliceblue;
+    
+}
+ul {                                                    /*matches unordered lists*/
+    color: darkred;
+    font-style: italic;
+    text-decoration: solid;
+    font-size: larger;
+}
+
+.img-gallery  {
+    width: 80%;
+    margin:100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img  {
+    width: 100%;
+    cursor: pointer;
+}
+
+.img-gallery img:hover   {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136,0.2);
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img  {
+    width: 90%;
+    max-width: 500px;
+}
+.full-img span  {
+    top: 5%;
+    right: 5%;
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+.hero-image  {
+    position: relative;
+}
+.hero-image h1  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 139 , 0.2);
+    color: #fff;
+    padding: 130px 70px 100px 30px;
+    width: 100vw;
+    height: 130px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero-image:hover h1 {
+    opacity: 1;
+  }
+  
+.hero-image h1  {
+    margin: 0;
+  }
+
+#birthdayButton  {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+@media all and (min-width: 600px) and (max-width:1000px) {
+    .name
+    {
+      float: left;
+      margin-left: 20px;
+      font-size: 50px;
+    
+    } 
+    .nav  {
+        word-spacing: 0em;
+    }
+    
+  }
+
+@media all and (max-width: 600px) {
+    .name  {
+        font-size: 50px;
+    }
+    .nav  {
+        width: 100%;
+    }
+    img  {
+        width: 100vw;
+    }
+}
+
+
+
+

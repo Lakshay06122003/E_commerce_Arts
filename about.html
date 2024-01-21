@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABOUT ME</title>
+    <link rel="icon" type="image/png" sizes="32x32" href=".dist/favicon-32x32.png">
+    <link rel="stylesheet" href="Styles.css">
+  </head>
+    <body>
+
+        <h1 class="name">Lakshay Saini</h1>      <!--my name in bold at the top of my page-->
+            <hr>  <!-- line -->
+            <h3>  <!--sub heading level 3  -->
+            
+            <nav class="nav"> <!-- navigation menu starts-->
+                    <a href="index.html">HOME</a>     <!--link to the home page-->
+                    <a href="blogs.html">BLOGS</a>    <!--link to the blogs page-->
+                    <a href="about.html">ABOUT</a>    <!--link to the about page-->
+                    <a href="contact.html">CONTACT</a> <!--link to the contact page-->
+            </nav> 
+
+            </h3>  <!--sub heading level 3  -->
+            <hr>  <!-- line -->
+        <br>  <!--go to next line-->
+    
+
+        <center><h1>ABOUT ME</h1></center>  <!--says about me  at the center-->
+
+      
+
+        <img class="myimage"src=".dist/myimage.jpg" alt="MY IMAGE" height="500px" width="400px" />  <!--my image-->
+
+        <center>   <!--breif introduction about me-->
+            Hi! I am Lakshay Saini , an aspiring artist and physicist. i turned 19 in 2022. 
+            I am completing my bachelor's degree from Dalhousie University. I am originally from <em>INDIA</em>
+            but i moved to <em>CANADA</em> for my undergraduate degree but my passion for art and physics is still 
+            the same. I find art comforting, it is like a warm jacket on a snowy day. So , you gues are most welcome
+            to join me on my journey.
+        </center>
+
+        <h1>HOBBIES</h1>    <!--list of my hobbies-->
+        <ul>
+            <li>Sketching</li>
+            <li>Painting</li>
+            <li>calisthenics</li>
+            <li>listening to music</li>
+        </ul>
+
+        <h1>PREFERENCES</h1>   <!--preferences table starts-->
+
+        <table>
+            <tr>
+                <th>FAVOURITES</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+
+            <tr>
+                <th>ARTIST</th>
+                <td>Van Gogh</td>
+                <td>Pablo picasso</td>
+                <td>Leonardo Da Vinci</td>
+            </tr>
+
+            <tr>
+                <th>PHYSICISTS</th>
+                <td>Albert Einstein</td>
+                <td>Stephen Hawking</td>
+                <td>Issac Newton</td>
+            </tr>    
+        </table>
+
+        <h1>
+            My Favourite Artwork  <!--heading -->
+        </h1>
+ 
+        <!--my fav artwork video link with an image to click on-->
+        <a target="_blank" href="https://www.youtube.com/shorts/seOppdk7UEM"><img class="hermione" src=".dist/favartwork.jpg" alt="favourite artwork" height="400px" width="300px"></a>
+        
+        <br> 
+
+        <h2>
+        LIKES TRAVELLING  <!--sub heading-->
+        </h2>
+
+        <br>
+        
+        <video controls width="500">
+            <source src="https://resources.zybooks.com/WebProgramming/subway.mp4">  <!--video with controls-->
+        </video>
+
+        <br> 
+
+        <center>
+            <h1>MY PHOTO GALLERY</h1>
+        </center>
+
+        <div class="full-img" id="fullImgBox">
+            <img src=".dist/img1.jpeg" alt="fullImage" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+
+        <div class="img-gallery">
+            <img src=".dist/img1.jpeg" alt="aestheticimg1" onclick="openFullImg(this.src)">
+            <img src=".dist/img2.jpeg" alt="aestheticimg2" onclick="openFullImg(this.src)">
+            <img src=".dist/img3.jpeg" alt="aestheticimg3" onclick="openFullImg(this.src)">
+            <img src=".dist/img4.jpg" alt="aestheticimg4" onclick="openFullImg(this.src)">
+        </div>
+
+        <center>
+            <label for="button" id="birthdayButton">CLICK ON ME IF IT'S YOUR BIRTHDAY!!</label>
+            <br>
+            <h1>Check if a number is positive or negative</h1>
+            <input type="text" id="number">
+            <button onclick="checkNumber()">Check</button>
+            <p id="result"></p>
+        </center>
+
+
+        <script src="script-about.js" ></script>
+
+
+        
+       
+  </body>
+</html>
